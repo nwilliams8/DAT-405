@@ -7,16 +7,13 @@ var green;
 var blue;
 function setup() {
   var canvas = createCanvas(500, 500);
-  var text = createDiv('Circular Motion')
-  text.position(300, 50)
-  text.style.fontSize = "50px";
   canvas.parent("myContainer");
-  canvas.position(100, 80)
   background(255);
   aSlider = createSlider(0, 255, 255);
-  aSlider.position(500, 40)
+  aSlider.parent("Slider1");
   dSlider = createSlider(0.0005, 10, 1)
-  dSlider.position(500, 400)
+  aSlider.parent("Slider2");
+  aSlider.position(100, 100)
   fSlider = createSlider(10, 60, 30)
   fSlider.position(500, 300)
   cSlider = createSlider(0, 255, 0)
