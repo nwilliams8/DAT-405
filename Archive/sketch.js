@@ -2,11 +2,16 @@
 let circleArray = [];
 let arraySize = 200;
 var CheckboxReverse;
-var red
-var green
-var blue
+var red;
+var green;
+var blue;
 function setup() {
-  createCanvas(500, 500);
+  var canvas = createCanvas(500, 500);
+  var text = createDiv('Circular Motion')
+  text.position(300, 50)
+  text.style.fontSize = "50px";
+  canvas.parent("myContainer");
+  canvas.position(100, 80)
   background(255);
   aSlider = createSlider(0, 255, 255);
   aSlider.position(500, 40)
